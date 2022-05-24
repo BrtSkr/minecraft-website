@@ -1,0 +1,54 @@
+.header-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  min-height: 100vh;
+  background: #121212;
+  overflow: hidden;
+  .header--img-holder {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    .header-img {
+      display: block;
+      max-height: 30rem;
+    }
+  }
+  .header-information {
+    font-size: 3.5rem;
+    font-family: $font-1;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    transform: skewX(-10deg);
+          
+    .header--information-text {
+      padding: 0;
+      margin: 0;
+      .header--information--text-gold {
+        color: gold;
+      }
+    }
+  }
+  .header--btn-holder {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3rem;
+    .header-btn {
+      width: 10rem;
+      height: 3rem;
+      font-family: $font-1;
+    }
+    >:nth-child(1){
+        background: transparent;
+        color: white;
+        border: 2px solid white;
+    }
+    >:nth-child(2){
+        background: gold;
+        border: 1px solid black;
+    }
+  }
+}

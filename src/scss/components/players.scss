@@ -1,0 +1,22 @@
+.section-players{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    background: violet;
+    min-height: 30rem;
+    padding: 3rem;
+    .section--players-card{
+        padding: 1rem;
+        >h2{
+            text-align: center;
+        }
+        width: 20rem;
+        background: rgb(103, 42, 103);
+      li{
+          display: flex;
+          flex-direction: row; 
+          justify-content: space-between;
+      }
+    }
+}

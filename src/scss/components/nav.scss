@@ -1,0 +1,30 @@
+@import "../modules/variables.scss";
+.nav-main {
+    display: flex;
+    flex-direction: row;
+  width: 100%;
+  background: #6d3a9d;
+  .nav-img{
+      display: block;
+      margin: auto 0 auto auto;
+  }
+  .nav--btn-holder {
+    display: flex;
+    justify-content: right;
+    flex-basis: 70%;
+    height: 3rem;
+    .nav-btn {
+      background: transparent;
+      border: none;
+      color: white;
+      font-family: $font-1;
+      min-width: 10rem;
+      cursor: pointer;
+      transition: 0.5s all;
+      &:hover {
+        background: yellow;
+        color: black;
+      }
+    }
+  }
+}

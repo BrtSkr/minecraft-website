@@ -1,0 +1,171 @@
+.nav-main {
+  width: 100%;
+  background: #6d3a9d;
+  flex-direction: row;
+  display: flex;
+}
+
+.nav-main .nav-img {
+  margin: auto 0 auto auto;
+  display: block;
+}
+
+.nav-main .nav--btn-holder {
+  height: 3rem;
+  flex-basis: 70%;
+  justify-content: right;
+  display: flex;
+}
+
+.nav-main .nav--btn-holder .nav-btn {
+  color: #fff;
+  min-width: 10rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: readex;
+  transition: all .5s;
+}
+
+.nav-main .nav--btn-holder .nav-btn:hover {
+  color: #000;
+  background: #ff0;
+}
+
+.header-main {
+  min-height: 100vh;
+  background: #121212;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  display: flex;
+  overflow: hidden;
+}
+
+.header-main .header--img-holder {
+  justify-content: center;
+  margin: auto;
+  display: flex;
+}
+
+.header-main .header--img-holder .header-img {
+  max-height: 30rem;
+  display: block;
+}
+
+.header-main .header-information {
+  color: #fff;
+  text-align: center;
+  font-family: readex;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  transform: skewX(-10deg);
+}
+
+.header-main .header-information .header--information-text {
+  margin: 0;
+  padding: 0;
+}
+
+.header-main .header-information .header--information-text .header--information--text-gold {
+  color: gold;
+}
+
+.header-main .header--btn-holder {
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+  display: flex;
+}
+
+.header-main .header--btn-holder .header-btn {
+  width: 10rem;
+  height: 3rem;
+  font-family: readex;
+}
+
+.header-main .header--btn-holder > :nth-child(1) {
+  color: #fff;
+  background: none;
+  border: 2px solid #fff;
+}
+
+.header-main .header--btn-holder > :nth-child(2) {
+  background: gold;
+  border: 1px solid #000;
+}
+
+.section-players {
+  min-height: 30rem;
+  background: violet;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+  padding: 3rem;
+  display: flex;
+}
+
+.section-players .section--players-card {
+  width: 20rem;
+  background: #672a67;
+  padding: 1rem;
+}
+
+.section-players .section--players-card > h2 {
+  text-align: center;
+}
+
+.section-players .section--players-card li {
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+}
+
+.section-death {
+  text-align: center;
+  max-width: 100%;
+  min-height: 10rem;
+  background: #9e4d4d;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  display: flex;
+}
+
+.section-death .section--death-head {
+  flex-flow: wrap;
+  justify-content: center;
+  display: flex;
+}
+
+.section-death .section--death-head img {
+  height: 5rem;
+  width: 5rem;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: readex;
+}
+
+button {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: .5rem;
+  background: #222;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a74545;
+}
+
+@font-face {
+  font-family: readex;
+  src: url("ReadexPro-Regular.0e118277.ttf");
+}
+
+/*# sourceMappingURL=index.b10d73a7.css.map */
