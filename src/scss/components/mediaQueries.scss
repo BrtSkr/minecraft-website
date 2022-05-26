@@ -1,0 +1,48 @@
+@media screen and (max-width: 1024px) {
+  .nav-main {
+    display: grid;
+    grid-template-rows: "." ".";
+    justify-content: left;
+    .nav-closeOpen-button {
+      visibility: visible !important;
+    }
+    .nav-subholder {
+      display: flex !important;
+      justify-content: left;
+      flex-direction: column !important;
+      flex-wrap: nowrap !important;
+      min-height: 50rem;
+      background: black;
+      transform: translateX(-20rem);
+      .nav--btn-holder,
+      .nav--img-holder {
+        display: flex !important;
+        flex-direction: column !important;
+      }
+    }
+  }
+
+  .footer-main {
+    > :nth-child(2),
+    > :nth-child(3) {
+      &::before {
+        position: absolute;
+        background: gray;
+        content: "";
+        height: 2px;
+        width: 100%;
+        //box-shadow: 0 0 0.2px 0.3px white inset;
+        top: -17.5rem;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto 0;
+        border: none;
+        opacity: 0.75;
+      }
+      .footer-section{
+            max-width: 12.5rem !important;
+      }
+    }
+  }
+}

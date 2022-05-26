@@ -1,29 +1,67 @@
 @import "../modules/variables.scss";
 .nav-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  background: black;
+  position: sticky;
+  top: 0;
+  max-height: 5rem;
+  z-index: 50; 
+  padding: 0 2rem;
+  filter: drop-shadow(0 -.2rem 0.75rem rgb(255, 255, 255));
+  //border-bottom: 1px solid white;
+    .nav-closeOpen-button {
+      visibility: hidden;
+      background: #121212;
+      border-radius: 6px;
+      border: none;
+      font-size: 2rem;
+      color: white;
+      flex-basis: 5%;
+      min-height: 4rem;
+      min-width: 4rem;
+      max-width: 4rem;
+      margin: auto auto auto 0;
+    }
+  .nav-subholder {
+    //background: black;
+    height: 100rem;
     display: flex;
     flex-direction: row;
-  width: 100%;
-  background: #6d3a9d;
-  .nav-img{
-      display: block;
-      margin: auto 0 auto auto;
-  }
-  .nav--btn-holder {
-    display: flex;
-    justify-content: right;
-    flex-basis: 70%;
-    height: 3rem;
-    .nav-btn {
-      background: transparent;
-      border: none;
-      color: white;
-      font-family: $font-1;
-      min-width: 10rem;
-      cursor: pointer;
-      transition: 0.5s all;
-      &:hover {
-        background: yellow;
-        color: black;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-height: 5rem;
+    margin: auto auto auto -7.5%;
+    transition: .3s all;
+    .nav--img-holder {
+      .nav-img {
+        display: block;
+        margin: auto 0 auto auto;
+        max-height: 10rem;
+      }
+    }
+
+    .nav--btn-holder {
+      display: flex;
+      justify-content: right;
+      height: 5rem;
+      .nav-btn {
+        background: transparent;
+        border: none;
+        color: white;
+        font-family: $font-1;
+        min-width: 10rem;
+        min-height: 3rem;
+        margin: auto 0;
+        cursor: pointer;
+        transition: 0.5s all;
+        &:hover {
+          background: yellow;
+          color: black;
+        }
       }
     }
   }

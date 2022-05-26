@@ -2,11 +2,10 @@
   "name": "minecraft-website",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html",
-    "build": "parcel build"
+    "prod": "parcel build src/index.html --dist-dir=build --public-url ."
   },
   "repository": {
     "type": "git",
@@ -20,10 +19,6 @@
   },
   "homepage": "https://github.com/BrtSkr/minecraft-website#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.5.0",
-    "parcel": "^2.5.0"
-  },
-  "dependencies": {
-    "bootstrap": "^5.1.3"
+    "bootstrap-icons": "^1.8.3"
   }
 }

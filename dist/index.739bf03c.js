@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"5BWij":[function(require,module,exports) {
+})({"jR15m":[function(require,module,exports) {
 "use strict";
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "7055c94b59712999";
+module.bundle.HMR_BUNDLE_ID = "ba60c367739bf03c";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, importScripts */ /*::
 import type {
   HMRAsset,
@@ -502,8 +502,23 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"4M6V8":[function(require,module,exports) {
+},{}],"ebWYT":[function(require,module,exports) {
+class Navbar {
+    constructor(element){
+        this.element = element;
+    }
+    show() {
+        //addEventListener('click', this.element)
+        console.log(document.querySelector(".nav-subholder"));
+    }
+}
+const newNavbar = new Navbar(document.querySelector(".nav-subholder"));
+newNavbar.show();
+const x = ()=>{
+    console.log(document.querySelector(".nav-subholder"));
+};
+x();
 
-},{}]},["5BWij","4M6V8"], "4M6V8", "parcelRequire0171")
+},{}]},["jR15m","ebWYT"], "ebWYT", "parcelRequire0171")
 
-//# sourceMappingURL=minecraft-website.59712999.js.map
+//# sourceMappingURL=index.739bf03c.js.map

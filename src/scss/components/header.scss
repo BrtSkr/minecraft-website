@@ -1,15 +1,33 @@
 .header-main {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 3rem;
-  min-height: 100vh;
-  background: #121212;
+  gap: 4rem;
+  min-height: 80vh;
+  
   overflow: hidden;
+  padding: 3rem;
+  &::before {
+    background: url("../images/bg.webp");
+    background-size: 110%;
+    background-position: 50%; 
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 0;
+    bottom: 0;
+    left: -10px;
+    height: 110%;
+    width: 110%;
+    z-index: -3;
+   filter: blur(3px);
+  }
   .header--img-holder {
+    z-index: 3;
     display: flex;
     justify-content: center;
-    margin: auto;
+    margin: 0 auto;
     .header-img {
       display: block;
       max-height: 30rem;
@@ -22,7 +40,7 @@
     color: white;
     text-align: center;
     transform: skewX(-10deg);
-          
+    margin: -8rem 0 0 0;
     .header--information-text {
       padding: 0;
       margin: 0;
@@ -40,15 +58,17 @@
       width: 10rem;
       height: 3rem;
       font-family: $font-1;
+      z-index: 3;
+      cursor: pointer;
     }
-    >:nth-child(1){
-        background: transparent;
-        color: white;
-        border: 2px solid white;
+    > :nth-child(1) {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
     }
-    >:nth-child(2){
-        background: gold;
-        border: 1px solid black;
+    > :nth-child(2) {
+      background: gold;
+      border: 1px solid black;
     }
   }
 }
