@@ -1,25 +1,40 @@
-.section-players{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem;
-    background: black;
-    min-height: 30rem;
-    padding: 3rem;
-    .section--players-card{
- 
-        padding: 1rem;
-        >h2{
-            text-align: center;
+.section-players {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  background: rgb(50, 0, 106) ;
+  min-height: 30rem;
+  padding: 3rem;
+  .section--players-card {
+    padding: 1rem;
+    > h2 {
+      text-align: center;
+    }
+    color: white;
+    width: 20rem;
+    background: hsla(0, 0%, 11%, 0.871);
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 0;
+      margin: 0;
+      div {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        margin-right: auto;
+        img {
+          max-height: 2rem;
+          margin: auto 0;
         }
-        color: white;
-        width: 20rem;
-        background: #121212;
-      li{
-          display: flex;
-          flex-direction: row; 
-          justify-content: space-between;
       }
     }
+  }
 }

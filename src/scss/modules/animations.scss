@@ -1,0 +1,16 @@
+@keyframes from-hidden-visible-opacity {
+     0%{
+         opacity: 0;
+     }
+     100%{
+         opacity: 1;
+     }
+}
+@keyframes scale-by-01 {
+    0%{
+        transform: scale(1.0);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}

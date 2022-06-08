@@ -5,13 +5,14 @@
   flex-direction: column;
   gap: 4rem;
   min-height: 80vh;
-  
+
   overflow: hidden;
   padding: 3rem;
   &::before {
-    background: url("../images/bg.webp");
+    background: url("../images/bgmc.png");
     background-size: 110%;
-    background-position: 50%; 
+    background-position: 50%;
+    background-attachment: fixed;
     content: "";
     position: absolute;
     top: -10px;
@@ -21,7 +22,7 @@
     height: 110%;
     width: 110%;
     z-index: -3;
-   filter: blur(3px);
+    //filter: blur(3px);
   }
   .header--img-holder {
     z-index: 3;

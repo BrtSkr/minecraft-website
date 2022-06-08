@@ -1,23 +1,34 @@
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1154px) {
   .nav-main {
     display: grid;
     grid-template-rows: "." ".";
     justify-content: left;
+    gap: 1rem;
     .nav-closeOpen-button {
       visibility: visible !important;
+      margin: 1rem 0 0 0;
     }
     .nav-subholder {
       display: flex !important;
       justify-content: left;
       flex-direction: column !important;
       flex-wrap: nowrap !important;
-      min-height: 50rem;
-      background: black;
+      //min-height: 50rem;
+      max-height: 30rem;
+      border-radius: 0 10px 10px 0;
+      background: $primary-purple;
       transform: translateX(-20rem);
+      backdrop-filter: blur(3px);
       .nav--btn-holder,
       .nav--img-holder {
         display: flex !important;
         flex-direction: column !important;
+      }
+      .nav--img-holder{
+        margin: 0 auto;
+      }
+      .nav--icon-holder{
+        margin: 10rem 0 0 1rem;
       }
     }
   }
